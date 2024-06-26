@@ -10,20 +10,17 @@ using namespace std;
 
 void solve()
 {
-    int n, h, a[n];
-    int w = 0;
-    cin >> n >> h;
-    for (int i = 0, ai; i < n; i++)
+    int a, b, y = 0;
+    cin >> a >> b;
+    a = a * 3;
+    b = b * 2;
+    while (a < b)
     {
-        cin >> ai;
-        if (ai > h)
-        {
-            w += 2;
-        }
-        else
-            w += 1;
+        ++y;
+        a = a * 3;
+        b = b * 2;
     }
-    cout << w;
+    cout << y;
 }
 int main()
 {
